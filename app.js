@@ -11,7 +11,7 @@ function agregarAmigo(){
     let nombre = document.getElementById('amigo').value;
     if (nombre !== ''){
         amigos.push(nombre);
-        console.log(amigos);
+        // console.log(amigos);
         agregarlista(nombre);
     }
     else{
@@ -31,7 +31,7 @@ function sortearAmigo(){
         //Limpiamos lista de amigos
         listaAmigos.innerHTML="";
         let indiceRandom = Math.floor(Math.random()*amigos.length);
-        console.log(indiceRandom);
+        // console.log(indiceRandom);
         let ganador = amigos[indiceRandom];
         document.getElementById('resultado').innerHTML = `El amigo secreto sorteado es: ${ganador}`;
         //Reset de array, por si no refrescan la pagina
